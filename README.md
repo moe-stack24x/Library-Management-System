@@ -39,6 +39,7 @@ Responsible for database operations using ADO.NET:
 - "SqlConnection"
 - "SqlCommand"
 - "SqlDataReader"
+- "DataTable"
 
 ---
 
@@ -155,7 +156,7 @@ Open the solution in Visual Studio.
 
 Create the required SQL Server database and tables, then update the connection string in:
 
-clsDataAccessSettings
+"clsDataAccessSettings"
 
 4. Run the Application
 
@@ -182,4 +183,4 @@ This project was developed to practice and demonstrate:
 
 Mohammad
 
-Built as a learning project while studying   Curse 18 (C# & DataBase Connectivity {ADO.NET})  in  ProgrammingAdvices Platform.
+Built as a learning project while studying   Curse number 18 {C# & DataBase Connectivity(ADO.NET)} in ProgrammingAdvices RoadMap.
