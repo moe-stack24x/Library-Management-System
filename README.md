@@ -100,17 +100,17 @@ The "Borrowings" table connects books and members using foreign key relationship
 - One Book → Many Borrowing Records
 
 ---
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-Technology| Usage
-C#| Application development
-.NET Framework| Application framework
-Windows Forms| Graphical User Interface
-ADO.NET| Database access
-Microsoft SQL Server| Database
-Visual Studio| Development Environment
-3-Tier Architecture| Application architecture
-
+| Technology | Usage |
+|------------|-------|
+| C# | Application development |
+| .NET Framework | Application framework |
+| Windows Forms | Graphical User Interface |
+| ADO.NET | Database access |
+| Microsoft SQL Server | Database |
+| Visual Studio | Development Environment |
+| 3-Tier Architecture | Application architecture |
 ---
 
 🚀 Getting Started
