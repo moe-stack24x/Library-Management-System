@@ -1,81 +1,182 @@
 📚 Library Management System
 
-A desktop Library Management System built with C# Windows Forms, ADO.NET, and SQL Server using the 3-Tier Architecture.
+A C# Windows Forms Library Management Application built following the 3-Tier Architecture pattern and utilizing ADO.NET for SQL Server database operations.
 
-The system manages books, authors, categories, members, and borrowing/return operations.
+---
 
-🛠️ Technologies
+🏗️ Architecture Overview
 
-- C#
-- Windows Forms
-- .NET Framework
-- ADO.NET
-- SQL Server
-- 3-Tier Architecture
-- Visual Studio
+This project follows the 3-Tier Software Architecture to ensure separation of concerns, maintainability, and scalability.
 
-🏗️ Architecture
+🖥️ Presentation Layer
 
-The project follows the 3-Tier Architecture:
+"LibraryManagementSystem"
 
-- Presentation Layer – Windows Forms UI.
-- Business Layer – Application logic and entities.
-- Data Access Layer – SQL Server communication using ADO.NET.
+Windows Forms UI responsible for:
+
+- User interactions
+- Form validation
+- Data visualization
+- Managing application forms
+
+🧠 Business Logic Layer
+
+"LibraryManagementSystem.Business"
+
+Responsible for:
+
+- Business rules
+- Entity management
+- Processing application logic
+- Connecting the Presentation Layer with the Data Access Layer
+
+🗄️ Data Access Layer
+
+"LibraryManagementSystem.DataAccess"
+
+Responsible for database operations using ADO.NET:
+
+- "SqlConnection"
+- "SqlCommand"
+- "SqlDataReader"
+
+---
 
 ✨ Features
 
 📚 Books
 
-- Add, update, delete, and view books.
-- Assign books to authors and categories.
-- Track book availability.
+- ➕ Add books
+- ✏️ Edit books
+- 🗑️ Delete books
+- 🔗 Assign books to authors and categories
+- 📊 Track book availability
 
 👤 Members
 
-- Add, update, delete, and view members.
+- ➕ Add members
+- ✏️ Edit members
+- 🗑️ Delete members
+- 👀 View members
 
 ✍️ Authors & Categories
 
-- Add, update, delete, and view authors and categories.
+- ➕ Add authors and categories
+- ✏️ Edit authors and categories
+- 🗑️ Delete authors and categories
 
 🔄 Borrowing & Returning
 
-- Borrow books for members.
-- Prevent borrowing unavailable books.
-- Automatically update book availability.
-- Return books and record the return date.
-- Track borrowing status.
+- 📖 Borrow books for members
+- 🚫 Prevent borrowing unavailable books
+- 🔴 Automatically mark borrowed books as unavailable
+- 🔄 Return borrowed books
+- 📅 Automatically record the return date
+- 🟢 Automatically mark returned books as available
+- 📊 Track borrowing status
+
+---
 
 🗄️ Database
 
-Main tables:
+The application uses Microsoft SQL Server with the following main tables:
 
-- Authors
-- Categories
-- Books
-- Members
-- Borrowings
+- "Authors"
+- "Categories"
+- "Books"
+- "Members"
+- "Borrowings"
 
-The "Borrowings" table connects Books and Members using foreign keys.
+The "Borrowings" table connects books and members using foreign key relationships.
+
+---
+
+🔗 Relationships
+
+- One Author → Many Books
+- One Category → Many Books
+- One Member → Many Borrowings
+- One Book → Many Borrowing Records
+
+---
+
+🛠️ Tech Stack
+
+Technology| Usage
+C#| Application development
+.NET Framework| Application framework
+Windows Forms| Graphical User Interface
+ADO.NET| Database access
+Microsoft SQL Server| Database
+Visual Studio| Development Environment
+3-Tier Architecture| Application architecture
+
+---
 
 📂 Project Structure
 
 LibraryManagementSystem
 │
 ├── Business
+│   ├── clsAuthor.cs
+│   ├── clsBook.cs
+│   ├── clsCategory.cs
+│   ├── clsMember.cs
+│   └── clsBorrowing.cs
+│
 ├── DataAccess
+│   ├── clsDataAccessSettings.cs
+│   ├── clsAuthorsData.cs
+│   ├── clsBooksData.cs
+│   ├── clsCategoriesData.cs
+│   ├── clsMembersData.cs
+│   └── clsBorrowingsData.cs
+│
 └── Forms
+    ├── frmAuthors.cs
+    ├── frmCategories.cs
+    ├── frmBooks.cs
+    ├── frmMembers.cs
+    └── frmBorrowings.cs
 
-⚙️ How to Run
+---
 
-1. Open the solution in Visual Studio.
-2. Create the required SQL Server database and tables.
-3. Update the connection string in "clsDataAccessSettings".
-4. Build and run the application.
+🚀 Getting Started
+
+1. Clone the Repository
+
+git clone <your-repository-url>
+
+2. Open the Project
+
+Open the solution in Visual Studio.
+
+3. Configure the Database
+
+Create the required SQL Server database and tables, then update the connection string in:
+
+clsDataAccessSettings
+
+4. Run the Application
+
+Build and run the project.
+
+---
 
 🎯 Purpose
 
-This project was built to practice OOP, 3-Tier Architecture, ADO.NET, SQL Server, CRUD operations, foreign keys, and Windows Forms development.
+This project was developed to practice and demonstrate:
+
+- Object-Oriented Programming
+- 3-Tier Architecture
+- ADO.NET
+- SQL Server database operations
+- CRUD operations
+- Foreign key relationships
+- Windows Forms development
+- Library borrowing and returning logic
+
+---
 
 👨‍💻 Author
 
