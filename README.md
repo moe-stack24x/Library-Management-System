@@ -139,7 +139,6 @@ LibraryManagementSystem
     ├── frmBooks.cs
     ├── frmMembers.cs
     └── frmBorrowings.cs
-
 ---
 
 🚀 Getting Started
