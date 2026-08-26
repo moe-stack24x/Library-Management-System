@@ -182,4 +182,4 @@ This project was developed to practice and demonstrate:
 
 Mohammad
 
-Built as a learning project while studying software development and database programming.
+Built as a learning project while studying   Curse 18 (C# & DataBase Connectivity {ADO.NET})  in  ProgrammingAdvices Platform.
