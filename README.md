@@ -100,7 +100,6 @@ The "Borrowings" table connects books and members using foreign key relationship
 - One Book → Many Borrowing Records
 
 ---
-
 🛠️ Tech Stack
 
 Technology| Usage
@@ -112,33 +111,6 @@ Microsoft SQL Server| Database
 Visual Studio| Development Environment
 3-Tier Architecture| Application architecture
 
----
-
-📂 Project Structure
-
-LibraryManagementSystem
-│
-├── Business
-│   ├── clsAuthor.cs
-│   ├── clsBook.cs
-│   ├── clsCategory.cs
-│   ├── clsMember.cs
-│   └── clsBorrowing.cs
-│
-├── DataAccess
-│   ├── clsDataAccessSettings.cs
-│   ├── clsAuthorsData.cs
-│   ├── clsBooksData.cs
-│   ├── clsCategoriesData.cs
-│   ├── clsMembersData.cs
-│   └── clsBorrowingsData.cs
-│
-└── Forms
-    ├── frmAuthors.cs
-    ├── frmCategories.cs
-    ├── frmBooks.cs
-    ├── frmMembers.cs
-    └── frmBorrowings.cs
 ---
 
 🚀 Getting Started
